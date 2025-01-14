@@ -1,27 +1,110 @@
-* {
-    box-sizing: border-box;
+/* Importation de la police personnalisée */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* Style de base */
 body {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    color: darkblue;
-    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans', Arial, sans-serif;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Header */
+header {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* Titres */
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Paragraphes */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
 img {
     max-width: 100%;
     height: auto;
-    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Liens */
 a {
-    color: deeppink;
+    color: #4CAF50;
     text-decoration: none;
 }
-
 a:hover {
-    color: darkmagenta;
+    color: #FF6347;
+    text-decoration: underline;
 }
+
